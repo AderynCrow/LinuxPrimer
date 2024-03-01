@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				<section data-auto-animate>
+						<h2>Warum Linux?</h2>
+					</section>
+					<section data-auto-animate>
+						<h2>Warum Linux?</h2>
+						<p>Tools</p>
+						<ul>
+							<li>clang</li>
+							<li>Mininet</li>
+							<li>Viele weitere Mächtige CLI Tools</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h2>Warum Linux?</h2>
+						<p>Power</p>
+						<ul>
+							<li>Offenes System</li>
+							<li>Terminal</li>
+							<li>Workflow</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h2>Warum Linux?</h2>
+						<p>Sei Meister der Maschine; nicht andersherum</p>
+						<img src="./DontTalkToMe.jpg" alt="DontTalkToMe" height="500px">
+					</section>
+				</section>
+				<section>
+					<section data-auto-animate>
+						<h2>Ist garnicht so schweer</h2>
+					</section>
+					<section data-auto-animate>
+						<h2>Ist garnicht so schweer</h2>
+						<img src="./Lentje.jpg" alt="TODO: Bild machen" height="500px">
+					</section>
+					<section data-auto-animate>
+						<h2>Ist garnicht so schweer</h2>
+						<ul>
+							<li>Just-Works Distros</li>
+							<li>Grafisches Desktop enviroment
+								<ul>
+									<li>Windows ähnliche: plasma, Xfce, LxQT</li>
+								</ul>
+							</li>
+							<li>Grundkonzepte bleiben gleich</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h2>Ist garnicht so schweer</h2>
+						<p>GUI Store</p>
+						<img src="./GUIStore.png" alt="GUIStore" height="500px">
+					</section>
+					<section data-auto-animate>
+						<h2>Ist garnicht so schweer</h2>
+						<p>Wikis und Hilfe im Internet</p>
+						<ul>
+							<li>wiki.ubuntuusers.de</li>
+							<li>wiki.ubuntu.com</li>
+							<li>archwiki.org</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section data-auto-animate>
+						<h2>Das Terminal</h2>
+					</section>
+					<section data-auto-animate>
+						<h2>Das Terminal</h2>
+						<p>BASH: Bourne again shell</p>
+					</section>
+					<section data-auto-animate>
+						<h2>Das Terminal</h2>
+						<p>BASH: Absolute Power</p>
+						<ul>
+							<li>sofortiger Zugriff auf alles</li>
+							<li>Arguments</li>
+							<li>Automatisierung/Scripting</li>
+							<li>Pipes</li>
+							<li>SSH</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h2>Das Terminal</h2>
+						<p>BASH: Absolute Power</p>
+						<pre>
+						<code class="language-bash" data-trim data-noescape>
+#!/bin/bash
+for ((i=0; i<100; i++))
+do
+	if (( $i % 3 == 0 )) then
+	echo -n Fizz
+	fi
+	if (( $i % 5 == 0 )) then
+	echo -n Buzz
+	fi
+	if (( ($i % 3) * ($i % 5) > 0 )) then
+		echo -n $i
+	fi
+	echo
+done
+
+						</code>
+						</pre>
+					</section>
+				</section>
+				<section>
+					<section data-auto-animate>
+						<h2>Wie??</h2>
+					</section>
+					<section data-auto-animate>
+						<h2>Wie??</h2>
+						<p>Meine Empfehlungen:</p>
+						<ol>
+							<li>Volle instalation</li>
+							<li>Eigene VM Erstellen</li>
+							<li>Vorgefertigte VM nutzen</li>
+							<li>Windows Subsystem for Linux</li>
+						</ol>
+					</section>
+					<section data-auto-animate>
+						<h2>Wie??</h2>
+						<p>Am besten selber suchen und lernen</p>
+					</section>
+					<section data-auto-animate>
+						<h2>Wie??</h2>
+						<p>VM Installieren</p>
+							<img src="VMqrCode" alt="QRcode for VM instalation" height="500px">
+					</section>
+				</section>
+				<section>
+					<h1>Viel Spaß!!</h1>
+					<img src="LinuxMascots" alt="bild von Xenia und Tux" height="500px">
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
